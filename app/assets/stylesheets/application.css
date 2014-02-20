@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ @import "bootstrap"
+ */
+.body_stuff {
+  margin-left: 140px;
+  height: 676px;
+}
+
+
+#subscribers_all th{
+  text-align: left;
+  padding: 10px 60px 10px 25px;
+}
+
+#subscribers_all td{
+  text-align: left;
+  padding-right: 60px;
+}
+
+#login_info {
+  padding-left: 20px;
+  font-size: .6em;
+}
+
+#login_info a{
+  padding: 0 0 0 0;
+}
+
+.devise input[type=submit] {
+  width: 220px;
+}
+
+.devise {
+   padding-top: 60px;
+}
+
+.get_started {
+  padding: 0 0 70px 0;
+}
+
+
+
+    /*MASONRY*/
+/*
+.masonry {
+  position: relative;
+  height: 800.5px;
+  -webkit-perspective-origin-x: 50%;
+  -webkit-perspective-origin-y: 3449px;
+}
+
+.msnry-item {
+  width: 25%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+*/
+.msnry-item img{
+  border-radius: 12px;
+}
+
+#wrapper
+{
+    max-width: 60em; /* 960 px */
+    margin: 0 auto;
+}
+    #masonry
+    {
+        width: 92.125%; /* 990px */
+        overflow: hidden;
+        margin-left: -1.562%; /* 15px */
+        margin-bottom: -1.875em; /* 30px */
+    }
+        .msnry-item
+        {
+            width: 30.303%; /* 300px */
+            float: left;
+            margin: 0 1.515% 1.875em; /* 15px 30px */
+        }
+
+

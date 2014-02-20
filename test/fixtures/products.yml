@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  photo: MyString
+  price: 1
+  description: MyString
+  vendor_id: 1
+
+two:
+  name: MyString
+  photo: MyString
+  price: 1
+  description: MyString
+  vendor_id: 1
