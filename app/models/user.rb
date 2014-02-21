@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_one :cart
+  has_many :cart_items, through: :orders
   has_many :orders
 
   # Include default devise modules. Others available are:

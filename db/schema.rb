@@ -11,19 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140219221241) do
+ActiveRecord::Schema.define(version: 20140221010637) do
 
-  create_table "carts", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "product_id"
+  create_table "cart_items", force: true do |t|
+    t.integer  "order_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "total"
   end
 
   create_table "orders", force: true do |t|
     t.integer  "user_id"
-    t.integer  "cart_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
