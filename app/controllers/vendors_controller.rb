@@ -55,4 +55,3 @@ class VendorsController < ApplicationController
 
 end
 
-end
