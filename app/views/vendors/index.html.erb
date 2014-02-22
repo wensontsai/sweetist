@@ -493,7 +493,7 @@
                       </li>
                       <li><span class="icon-chevron-right"></span></li>
                       <li>
-                          <a href="shop-no-sidebar.html">All Products (no sidebar)</a>
+                          <a href="shop-no-sidebar.html">All Our Vendors</a>
                       </li>
                   </ul>
             </div>
@@ -512,7 +512,7 @@
                     <div class="underlined push-down-20">
                         <div class="row">
                             <div class="span6">
-                                <h3><span class="light">All</span> Products</h3>
+                                <h3><span class="light">All</span> Our Vendors</h3>
                             </div>
                             <div class="span6 align-right sm-align-left">
                                 <div class="form-inline sorting-by">
@@ -558,14 +558,14 @@
                                 <div class="picture">
                                  <!--    <a href="product.html"><img src="#" alt="" width="540" height="374" /></a> -->
                                     <div class="img-overlay">
-                                        <a href="product.html" class="btn more btn-primary">More</a>
+                                        <a href="vendor/<%=vendor.id%>" class="btn more btn-primary">More</a>
                                         <a href="#" class="btn buy btn-danger">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="main-titles no-margin">
 
-                                <a href="#"><h4 class="product_vendor"><%= vendor.name %></a>
+                                <a href="vendor/<%=vendor.id%>"><h4 class="product_vendor"><%= vendor.name %></a>
                                 <!-- <h5 class="product_name no-margin"></h5>
                                 <h4 class="title"></h4> -->
                             </div>

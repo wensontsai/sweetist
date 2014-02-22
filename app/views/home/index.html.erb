@@ -929,9 +929,9 @@
 
                           <div class="product-img">
                                 <div class="picture">
-                                    <a href="product.html"><img src="images/<%= product.photo %>" alt="" width="540" height="374" /></a>
+                                    <a href="product/<%=product.id%>"><img src="images/<%= product.photo %>" alt="" width="540" height="374" /></a>
                                     <div class="img-overlay">
-                                        <a href="product.html" class="btn more btn-primary">More</a>
+                                        <a href="product/<%=product.id%>" class="btn more btn-primary">More</a>
                                         <a href="#" class="btn buy btn-danger">Add to Cart</a>
                                     </div>
                                 </div>
@@ -941,7 +941,7 @@
                                 <% vendor = Vendor.find(product.vendor_id) %>
 
 
-                                <a href="#"><h4 class="product_vendor"><%= vendor.name %></a>
+                                <a href="vendor/<%= vendor.id %>"><h4 class="product_vendor"><%= vendor.name %></a>
                                 <h5 class="product_name no-margin"><%= product.name %></h5>
                                 <h4 class="title">$<%= product.price %></h4>
                             </div>
