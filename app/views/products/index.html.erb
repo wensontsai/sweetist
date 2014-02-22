@@ -207,8 +207,8 @@
                             <li class="row">
                                 <div class="span2">
                                     <ul class="nav nav-pills nav-stacked">
-                                        <li><a href="shop.html">By Products</a></li>
-                                        <li><a href="shop-list-view.html">By Vendors</a></li>
+                                        <li><a href="/products">By Products</a></li>
+                                        <li><a href="/vendors">By Vendors</a></li>
                                        <!--  <li><a href="shop-no-sidebar.html">Full Width</a></li>
                                         <li><a href="product.html">Single Product</a></li>
                                         <li><a href="shop-search.html">Search Results</a></li> -->
@@ -485,7 +485,7 @@
             <div class="span12">
                 <ul class="breadcrumb">
                       <li>
-                          <a href="index.html">Webmarket</a>
+                          <a href="index.html">Sweetist</a>
                       </li>
                       <li><span class="icon-chevron-right"></span></li>
                       <li>
@@ -544,41 +544,58 @@
                         <div id="isotopeContainer" class="isotope-container">
 
                                                     <!--  ==========  -->
-              <!--  = Single Product =  -->
-              <!--  ==========  -->
-                          <div class="span3 isotope--target filter--polo-shirts" data-price="364" data-popularity="4" data-size="xs|s|m|xl" data-color="green|purple" data-brand="s-oliver">
-                              <div class="product">
-                                    <div class="product-inner">
-                                                                            <div class="product-img">
-                                          <div class="picture">
-                                              <a href="product.html"><img width="540" height="374" alt="" src="images/dummy/products/product-18.jpg" /></a>
-                                              <div class="img-overlay">
-                                                  <a class="btn more btn-primary" href="product.html">More</a>
-                                                  <a class="btn buy btn-danger" href="#">Add to Cart</a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="main-titles no-margin">
-                                                                                    <h4 class="title">$364</h4>
-                                                                                    <h5 class="no-margin isotope--title">Amet Consectetur Vel Adipiscing Amet</h5>
-                                      </div>
-                                      <div class="row-fluid hidden-line">
-                                            <div class="span6">
-                                                <a href="#" class="btn btn-small"><i class="icon-heart"></i></a>
-                                                <a href="#" class="btn btn-small"><i class="icon-exchange"></i></a>
-                                            </div>
-                                            <div class="span6 align-right">
-                                                <span class="icon-star stars-clr"></span>
-                                                <span class="icon-star stars-clr"></span>
-                                                <span class="icon-star stars-clr"></span>
-                                                <span class="icon-star stars-clr"></span>
-                                                <span class="icon-star"></span>
-                                                                                            </div>
-                                        </div>
+              <!--  = Product =  -->
+                <!--  ==========  -->
+                <% @product = Product.all %>
+                <% @product.each do |product| %>
+
+              <div class="span3 isotope--target filter--suits" data-price="1250" data-popularity="2" data-size="xs|s|m" data-color="green|orange" data-brand="puma">
+                    <div class="product">
+                     <div class="product-inner">
+
+
+                          <div class="product-img">
+                                <div class="picture">
+                                    <a href="product.html"><img src="images/<%= product.photo %>" alt="" width="540" height="374" /></a>
+                                    <div class="img-overlay">
+                                        <a href="product.html" class="btn more btn-primary">More</a>
+                                        <a href="#" class="btn buy btn-danger">Add to Cart</a>
                                     </div>
-                              </div>
-                          </div> <!-- /single product -->
-                                                    <!--  ==========  -->
+                                </div>
+                            </div>
+                            <div class="main-titles no-margin">
+
+                                <% vendor = Vendor.find(product.vendor_id) %>
+
+
+                                <a href="#"><h4 class="product_vendor"><%= vendor.name %></a>
+                                <h5 class="product_name no-margin"><%= product.name %></h5>
+                                <h4 class="title">$<%= product.price %></h4>
+                            </div>
+                            <p class="desc"><%= product.description %></p>
+
+
+                            <div class="row-fluid hidden-line">
+                                <div class="span6">
+                                    <a href="#" class="btn btn-small"><i class="icon-heart"></i></a>
+                                    <a href="#" class="btn btn-small"><i class="icon-exchange"></i></a>
+                                </div>
+                                <div class="span6 align-right">
+                                    <span class="icon-star stars-clr"></span>
+                                    <span class="icon-star stars-clr"></span>
+                                    <span class="icon-star stars-clr"></span>
+                                    <span class="icon-star stars-clr"></span>
+                                    <span class="icon-star stars-clr"></span>
+                                </div>
+                            </div>
+                    </div>
+                  </div>
+
+
+              </div> <!-- /product -->
+
+                <% end %>
+                                                            <!--  ==========  -->
               <!--  = Single Product =  -->
               <!--  ==========  -->
                           <div class="span3 isotope--target filter--suits" data-price="1250" data-popularity="2" data-size="xs|s|m" data-color="green|orange" data-brand="puma">
@@ -615,6 +632,12 @@
                               </div>
                           </div> <!-- /single product -->
                                                     <!--  ==========  -->
+
+
+
+
+
+
               <!--  = Single Product =  -->
               <!--  ==========  -->
                           <div class="span3 isotope--target filter--suits" data-price="421" data-popularity="3" data-size="m|l|xxl" data-color="pink|purple" data-brand="naish">
@@ -935,7 +958,7 @@
                                                     <!--  ==========  -->
               <!--  = Single Product =  -->
               <!--  ==========  -->
-                          <div class="span3 isotope--target filter--shorts" data-price="1041" data-popularity="4" data-size="xs|l" data-color="green" data-brand="shred">
+                  <!--         <div class="span3 isotope--target filter--shorts" data-price="1041" data-popularity="4" data-size="xs|l" data-color="green" data-brand="shred">
                               <div class="product">
                                     <div class="product-inner">
                                                                             <div class="product-img">
@@ -966,7 +989,7 @@
                                         </div>
                                     </div>
                               </div>
-                          </div> <!-- /single product -->
+                          </div> --> <!-- /single product -->
 
 
                       </div> <!-- /isotope-container -->

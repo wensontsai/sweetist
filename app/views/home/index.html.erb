@@ -156,8 +156,8 @@
                             <li class="row">
                                 <div class="span2">
                                     <ul class="nav nav-pills nav-stacked">
-                                        <li><a href="shop.html">By Products</a></li>
-                                        <li><a href="shop-list-view.html">By Vendors</a></li>
+                                        <li><a href="/products">By Products</a></li>
+                                        <li><a href="/vendors">By Vendors</a></li>
                                        <!--  <li><a href="shop-no-sidebar.html">Full Width</a></li>
                                         <li><a href="product.html">Single Product</a></li>
                                         <li><a href="shop-search.html">Search Results</a></li> -->
@@ -338,6 +338,7 @@
             <div class="span3">
                 <div class="cart-container" id="cartContainer">
                     <div class="cart">
+                        <%= current_user.email %>
                         <p class="items">CART <span class="dark-clr">(3)</span></p>
                         <p class="dark-clr hidden-tablet">$1816.90</p>
                         <a href="checkout-step-1.html" class="btn btn-danger">
