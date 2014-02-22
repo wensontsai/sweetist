@@ -1,7 +1,7 @@
 class AccountsController < ApplicationController
 
   def index
-    @users = User.all
+    @user = current_user.email
   end
 
   def show
