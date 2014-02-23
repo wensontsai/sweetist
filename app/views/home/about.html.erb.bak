@@ -4,9 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
 <!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
-	<!--
-	<head>
+  <head>
     <meta charset="utf-8">
     <title>Sweetist - The best place to experience new sweets</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,7 +51,6 @@
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch/57.png">
     <link rel="shortcut icon" href="images/apple-touch/57.png">
   </head>
-	-->
 
     <body class="">
 
