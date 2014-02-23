@@ -784,6 +784,9 @@ header .icons a:hover { color: #555555; text-decoration: none; }
 .breadcrumb > li, .breadcrumb .active { text-shadow: none; color: #4e5e63; }
 .breadcrumb a { color: #fff; }
 
+/* ADDING CSS FOR NEW ABOUT PAGE SUB-MENU */
+.howitworks { font-size: 12px; padding-left: 10px; padding-right: 10px; }
+
 .share-item { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #f3f3f3; padding: 10px 12px 7px 12px; color: #6a6a6a; }
 .share-item .span6 { min-height: 5px; }
 
