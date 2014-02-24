@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
-  def account
-    @user = User.find(params[:id])
+  def index
+    @user = current_user
   end
 
   # def index

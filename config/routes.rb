@@ -19,7 +19,7 @@ Tastemaker::Application.routes.draw do
   get "blog" => "blogs#index"
   get "about" => "home#about"
   get "contact" => "home#contact"
-  get "account" => "users#account"
+  get "account" => "users#index"
 
   get "wishlist" => "users#account"
 

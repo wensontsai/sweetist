@@ -28,7 +28,7 @@ class CartItemsController < ApplicationController
 
   def destroy
     @cart_item = CartItem.find(params[:id])
-    if @product.destroy
+    if @cart_item.destroy
       render json: {success:true}
     else
       render json: {success:false}
